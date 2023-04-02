@@ -15,7 +15,7 @@ urlpatterns = [
     path('jet/',  include('jet.urls')),
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')),
-    path('accounts/', include('accounts.urls')),
+    path('', include('accounts.urls')),
     path('products/', include('products.urls')),
     path('cart/', include('cart.urls')),
     path('checkout/', include('order.urls')),

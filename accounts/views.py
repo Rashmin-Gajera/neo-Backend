@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -23,3 +23,6 @@ class OrderDetail(APIView):
         if order_obj.billing_profile.user != request.user:
             return Response(status=401)
         return Response(DetailedOrderSerializer(order_obj).data)
+
+def index(request):
+    return render(request,'index.html')
