@@ -10,7 +10,7 @@ DEBUG = False if os.environ.get('PRODUCTION') == '1' else True
 
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','192.168.43.153']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','192.168.167.153']
 
 INSTALLED_APPS = [
 
